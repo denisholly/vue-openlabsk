@@ -1,0 +1,382 @@
+<template>
+    <the-jumbotron></the-jumbotron>
+    <site-section id="why" class="py-4 py-md-5" container-class="py-4" row-class="justify-content-center">
+        <div class="text-center col-12">
+            <h2 class="fw-light mb-5 display-6">
+                Prečo
+                <span class="fw-bold">
+                OpenLab?
+                </span>
+            </h2>
+            <p class="text-gray mx-md-5">
+                V OpenLabe študentov učíme najnovšie technológie. Zároveň im dávame veľkú slobodu, 
+                pričom ich vedieme k zodpovednosti a samostatnosti, 
+                učíme ich princípy partnerského prístupu, pracovať v tíme, 
+                trénujeme ich schopnosti sebareflexie a podnecujeme ich kreativitu. 
+                Takto študentov pripravujeme osobnostne aj tech zručnosťami na veľké veci, 
+                ktoré môžu v budúcnosti tvoriť.
+            </p>
+        </div>
+            <div class="col-md-4 col-xl-3 text-md-start text-center pt-3 pt-md-5">
+            <img src="../assets/images/select.svg" alt="select" class="my-3">
+            <h5 class="fw-bold">Celospoločenský rozvoj</h5>
+            <p>Osnovy aj učebné materiály pre všetky tech oblasti sú open source.</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-md-start text-center pt-3 pt-md-5">
+            <img src="../assets/images/support.svg" alt="select" class="my-3">
+            <h5 class="fw-bold">Učenie praxou</h5>
+            <p>Študentov vedieme k tímovému riešeniu problémov.</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-md-start text-center pt-3 pt-md-5">
+            <img src="../assets/images/intership.svg" alt="select" class="my-3">
+            <h5 class="fw-bold">Rozvoj talentu</h5>
+            <p>Vytvárame šikovné tímy schopné riešiť veľké problémy.</p>
+        </div>
+    </site-section>
+    <site-section id="vision" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+        <div class="col-lg-5 col-xl-6">
+            <h2 class="fw-light mb-5 display-6">
+            Naša vízia
+            <span class="fw-bold">
+                v OpenLabe
+            </span>
+            </h2>
+            <p class="text-gray mb-4">
+            Veríme, že otvorený prístup a kvalitné vzdelanie sú základom úspechu jednotlivca ako aj prosperujúcej spoločnosti.
+            </p>
+            <p class="text-gray">
+            Uvedomujeme si, že ak chceme niečo zmeniť, musíme ísť príkladom. Našim cieľom je rozšíriť 
+            princípy OpenLab-u na všetkých úrovniach škôl a nastaviť svetový štandard vzdelávania v školstve v technológiách.
+            </p>
+        </div>
+        <div class="col-lg-7 col-xl-6 d-flex flex-column align-items-center justify-content-center justify-content-lg-end">
+            <div class="boxes row d-flex justify-content-space-between">
+                <div class="tried box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
+                    <p class="box-number lh-1">11</p>
+                    <p part="box-text">tried</p>
+                </div>
+                <div class="studentov box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
+                    <p class="box-number lh-1">222</p>
+                    <p part="box-text">študentov</p>
+                </div>
+            </div>
+            <div class="boxes row d-flex justify-content-space-between">
+                <div class="labmastrov box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
+                    <p class="box-number lh-1">14</p>
+                    <p part="box-text">labmastrov</p>
+                </div>
+                <div class="skoly box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
+                    <p class="box-number lh-1 mb-1">2</p>
+                    <p part="box-text">školy</p>
+                </div>
+            </div>
+        </div>
+    </site-section>
+    <site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+        <div class="col-lg-4">
+            <h2 class="fw-light mb-5 display-6">
+            V akých laboch
+            <br>
+            <span class="fw-bold">
+                možeš študovať?
+            </span>
+            </h2>
+        </div>
+        <div class="col-lg-8 d-block d-sm-flex">
+            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
+                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
+                    <h5 class="card-title">
+                    <span class="fw-bold">Hybrid</span>
+                    Lab
+                    </h5>
+                    <p class="labs-card-text card-text text-gray">
+                    Študenti sa učia vyvíjať hybridné aplikácie v HTML, PHP, CSS, JavaScript, Ionicu, Vue a OctoberCMS.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
+                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
+                    <h5 class="card-title">
+                    <span class="fw-bold">Games</span>
+                    Lab
+                    </h5>
+                    <p class="labs-card-text card-text text-gray">
+                    Študenti vyvíjajú mobilné hry v Unity a GDevelop, učia sa tvoriť 2D grafiku v programe Piskel, 3D grafiku v programe Blender a herný dizajn.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
+                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
+                    <h5 class="card-title">
+                    <span class="fw-bold">Apps</span>
+                    Lab
+                    </h5>
+                    <p class="labs-card-text card-text text-gray">
+                    Študenti sa učia vyvíjať mobilné aplikácie v C# a Xamarin.forms a webové aplikácie v Java a Angular JS.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+        </div>
+    </site-section>
+    <site-section id="schools" class="py-4 py-md-5 position-relative" containerClass="py-4" rowClass="align-items-center justify-content-center">
+        <div class="col-12 mb-3 text-center">
+            <h2 class="fw-light mb-5 display-6">
+            <span class="fw-bold">
+                Nachádzame sa
+            </span>
+            na dvoch školách
+            </h2>
+        </div>
+        <div class="col-lg-5 me-lg-5 mb-4 mb-md-0">
+            <div class="card bg-transparent border-0">
+                <img src="../assets/images/school1.png" class="img-fluid" alt="school1">
+                <div class="card-body px-0 pt-4">
+                    <h6 class="card-subtitle fw-light mb-2 text-gray mb-4">
+                    <img src="../assets/images/place.svg" alt="place-icon">
+                    Hálova 16, Bratislava
+                    </h6>
+                    <h5 class="card-title d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end">
+                    <span class="fw-bold">Stredná Priemyselná Škola Elektrotechnická</span>
+                    <a href="#" class="text-decoration-none text-primary mt-4 mt-md-0">www.spsehalova.sk</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 ms-lg-5 z-index-1">
+            <div class="card bg-transparent border-0">
+                <img src="../assets/images/school2.png" class="img-fluid" alt="school1">
+                <div class="card-body px-0 pt-4">
+                    <h6 class="card-subtitle fw-light mb-2 text-gray mb-4">
+                    <img src="../assets/images/place.svg" alt="place-icon">
+                    Nábrežná 1325, Kysucké Nové Mesto
+                    </h6>
+                    <h5 class="card-title d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end">
+                    <span class="fw-bold pe-2">Stredná Priemyselná Škola Informačných Technológií</span>
+                    <a href="#" class="text-decoration-none text-primary mt-4 mt-md-0">www.spsknm.sk</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </site-section>
+    <site-section id="studyIt" class="pt-5 mb-4 mb-md-5" containerClass="pt-lg-5" rowClass="justify-content-center">
+        <div class="col-lg-6 col-xl-5 mb-5">
+            <h2 class="fw-light pb-4 mb-0 display-6">
+                <span class="fw-bold">
+                    Chceš ísť študovať odbor
+                    <br>
+                </span>
+                kompletne zameraný na IT?
+            </h2>
+            <h5 class="fw-bold mt-5 mb-3 position-relative">
+                <span class="position-absolute it-count">
+                    2573M
+                </span>
+                <span>
+                    Programovanie digitálnych technológií
+                </span>
+            </h5>
+            <p class="text-gray mb-4">
+                Čaká ťa tvorba aplikácií a hier, inovatívne myslenie, práca na reálnych projektoch. To všetko v spolupráci s tech odborníkmi z praxe, 
+                ktorí budú študentov a študentky na ich ceste sprevádzať a podporovať.
+            </p>
+            <p class="text-gray mb-5">
+                Staň sa súčasťou tohto inovatívneho študijného programu aj ty!
+            </p>
+            <a href="#" class="btn btn-primary btn-lg border-0">
+                Chcem vedieť viac
+            </a>
+        </div>
+        <div class="col-lg-6 col-xl-7 d-none d-lg-flex align-items-end">
+            <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid">
+        </div>
+    </site-section>
+    <site-section id="join" class="py-4 py-md-5 position-relative" containerClass="pt-4 pt-md-5" rowClass="align-items-center justify-content-center">
+        <div class="col-12 mb-3 text-center">
+            <h2 class="fw-light mb-5 display-6">
+            Pridajte sa k nám
+            <br>
+            <span class="fw-bold">
+                My všetci sme OpenLab…
+            </span>
+            </h2>
+        </div>
+        <div class="col-12 d-flex flex-nowrap overflow-scroll card-group justify-content-xl-center card-wrapper">
+            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
+                <div class="card-body px-4 pt-4 pb-5 mt-2">
+                    <h5 class="card-title">
+                        <span class="fw-bold">Labmastri</span>
+                    </h5>
+                    <p class="card-text text-gray">
+                        Odborníci z praxe, ktorí odovzdávajú študentom svoj know-how v roli mentora 5 hodín týždenne celý školský rok.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
+                <div class="card-body px-4 pt-4 pb-5 mt-2">
+                    <h5 class="card-title">
+                        <span class="fw-bold">Firmy</span>
+                    </h5>
+                    <p class="card-text text-gray">
+                        Technologické firmy sú garantmi obsahu jednotlivých labov, spolupracujú so študentmi na projektoch a v rámci študentských stáží.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
+                <div class="card-body px-4 pt-4 pb-5 mt-2">
+                    <h5 class="card-title">
+                        <span class="fw-bold">Školy</span>
+                    </h5>
+                    <p class="card-text text-gray">
+                        Stredné odborné školy zamerané na digitálne technológie v jednotlivých regiónoch inovujú svoje technologické vzdelávanie.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
+                <div class="card-body px-4 pt-4 pb-5 mt-2">
+                    <h5 class="card-title">
+                        <span class="fw-bold">Študenti</span>
+                    </h5>
+                    <p class="card-text text-gray">
+                        Stredoškoláci so záujmom o najnovšie technológie a silnou vnútornou motiváciou učiť sa nové veci a rozvíjať svoje schopnosti.
+                    </p>
+                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
+                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
+                </div>
+            </div>
+        </div>
+        <join-carousel></join-carousel>
+    </site-section>
+    <site-section id="see-projects" class="py-4 py-md-5 z-index-1" containerClass="py-4 py-md-5 border-bottom" rowClass="justify-content-center">
+        <div class="text-center col-12 mb-5 z-index-1">
+            <h2 class="fw-light mb-5 display-6">
+                Pozrite si
+                <span class="fw-bold">
+                    študentské projekty
+                </span>
+            </h2>
+            <p class="text-gray mb-md-5">
+                Stredoškoláci v OpenLaboch pracujú na reálnych projektoch v spolupráci s firmami 
+                pričom získavajú praktické zručnosti a osvojujú si prístup, 
+                ktorým neskôr posunú svet technológií a celú spoločnosť vpred.
+            </p>
+        </div>
+        <see-projects-carousel></see-projects-carousel>
+    </site-section>
+    <site-section id="special" class="pt-4 pt-md-5 position-relative" containerClass="py-4 py-md-5" rowClass="justify-content-center border-bottom pb-5">
+            <div class="text-center col-12">
+                <h2 class="mb-5 display-6">
+                Čím sme
+                <span class="fw-bold">
+                  výnimoční?
+                </span>
+              </h2>
+            </div>
+            <div class="col-md-4 col-xl-3 ms-xl-5 pt-3 pt-md-5">
+              <img src="../assets/images/special1.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">Partnerstvo</h5>
+              <p class="text-gray">Dáva študentom slobodu, ktorú vyvažujú zodpovednosťou. Spolupráca LabMastra a študentov je v partnerskej rovine.</p>
+            </div>
+            <div class="col-md-4 col-xl-3 pt-3 pt-md-5">
+              <img src="../assets/images/special2.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">LabMaster</h5>
+              <p class="text-gray">Je mentor s expertízou v danej oblasti, ktorý nastavuje rámce a sprevádza študentov pri dosahovaní míľnikov.</p>
+            </div>
+            <div class="col-md-4 col-xl-3 me-xl-5 pt-3 pt-md-5">
+              <img src="../assets/images/special3.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">Učebný blok</h5>
+              <p class="text-gray">Je základný dokument, z ktorého sa študenti učia. Obsahuje všetky vzdelávacie podklady pre konkrétnu fázu.</p>
+            </div>
+            <div class="col-md-4 col-xl-3 pt-3 pt-md-5">
+              <img src="../assets/images/special4.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">Problem driven</h5>
+              <p class="text-gray">Je princíp učenia, vďaka ktorému sú študenti vedení ku kritickému mysleniu s cieľom vyriešiť konkrétne problémy.</p>
+            </div>
+            <div class="col-md-4 col-xl-3 pt-3 pt-md-5">
+              <img src="../assets/images/special5.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">Project driven</h5>
+              <p class="text-gray">Po teoretickej fáze sú študenti rozdelení do tímov, v ktorých v spolupráci s firmami tvoria konkrétny projekt pre zákazníka.</p>
+            </div>
+            <div class="col-md-4 col-xl-3 pt-3 pt-md-5">
+              <img src="../assets/images/special6.svg" alt="select" class="my-3">
+              <h5 class="fw-bold mb-4">Samoštúdium</h5>
+              <p class="text-gray">Študenti trávia 80% času samoštúdiom a sú vedení k tímovej spolupráci. 20% teórie slúži iba ako odrazový mostík.</p>
+            </div>
+    </site-section>
+    <site-section id="know-us" class="pb-4 pb-md-5" containerClass="py-4">
+        <div class="text-center col-12">
+            <h2 class="mb-5 display-6">
+                <span class="fw-bold">
+                    Spoznaj nás
+                </span>
+            </h2>
+        </div>
+        <know-us-card v-for="card in knowUsCards" :key="card" class="col-6 col-md-3 mb-4 pt-4" :title="card.title" :desc="card.desc" :role="card.role" :imgSrc="card.imgSrc"></know-us-card>
+    </site-section>
+    <site-section id="support-us" class="py-4 py-md-5" rowClass="align-items-center">
+        <div class="col-md-6 mb-5 mb-md-0">
+            <img src="../assets/images/people.png" alt="support-people" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h2 class="fw-bold md-4">Podporte nás</h2>
+            <p class="text-gray mb-5">
+                OpenLab postupne rozširujeme ako neziskový vzdelávací projekt s cieľom otvoriť OpenLab-y zamerané na rôzne IT 
+                technológie na čo najväčší počet škôl vo všetkých slovenských regiónoch. Veríme, že OpenLab bude natoľko úspešný,
+                že sa stane štandardom vzdelávania na Slovensku!
+            </p>
+            <a href="#" class="text-decoration-none see-projects-anchor z-index-1 position-relative">
+                Chcem podporiť
+                <img src="../assets/images/arrow-right-blue.svg" alt="arrow-right-blue" class="ms-2">
+            </a>
+        </div>
+    </site-section>
+</template>
+
+<script>
+import TheJumbotron from  '../components/TheJumbotron.vue'
+import SiteSection from '../components/layouts/SiteSection.vue'
+import JoinCarousel from '../components/JoinCarousel.vue'
+import SeeProjectsCarousel from '../components/SeeProjectsCarousel.vue'
+import KnowUsCard from '../components/KnowUsCard.vue'
+export default {
+    components: {
+        TheJumbotron,
+        SiteSection,
+        JoinCarousel,
+        SeeProjectsCarousel,
+        KnowUsCard,
+    },
+    data() {
+        return {
+            specialCards: [
+                { title: 'Partnerstvo', text: 'Dáva študentom slobodu, ktorú vyvažujú zodpovednosťou. Spolupráca LabMastra a študentov je v partnerskej rovine.', img: require('../assets/images/special1.svg')},
+                { title: 'LabMaster', text: 'Je mentor s expertízou v danej oblasti, ktorý nastavuje rámce a sprevádza študentov pri dosahovaní míľnikov.', img: require('../assets/images/special2.svg')},
+                { title: 'Učebný blok', text: 'Je základný dokument, z ktorého sa študenti učia. Obsahuje všetky vzdelávacie podklady pre konkrétnu fázu.', img: require('../assets/images/special3.svg')},
+                { title: 'Problen driven', text: 'Je princíp učenia, vďaka ktorému sú študenti vedení ku kritickému mysleniu s cieľom vyriešiť konkrétne problémy.', img: require('../assets/images/special4.svg')},
+                { title: 'Project driven', text: 'Po teoretickej fáze sú študenti rozdelení do tímov, v ktorých v spolupráci s firmami tvoria konkrétny projekt pre zákazníka.', img: require('../assets/images/special5.svg')},
+                { title: 'Samoštúdium', text: 'Študenti trávia 80% času samoštúdiom a sú vedení k tímovej spolupráci. 20% teórie slúži iba ako odrazový mostík.', img: require('../assets/images/special6.svg')}
+            ],
+            knowUsCards: [
+                { title: 'Grigor Ayrumyan', desc: 'Co-founder & Executive Director', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/grigor-ayrumyan.jpg') },
+                { title: 'Slavomír Terezka', desc: 'Co-founder', role: 'BOARD MEMBER', imgSrc: require('../assets/images/slavomir-terezka.jpg') },
+                { title: 'Roman Sekerka', desc: 'Co-founder & Tech Garant pre HybridLab a AppsLab', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/roman-sekerka.jpg') },
+                { title: 'Ján Kožlej', desc: 'Tech Garant pre GamesLab', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/jan-kozlej.jpg') },
+                { title: 'Veronika Radobická', desc: 'Marketing Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/veronika-radobicka.jpg') },
+                { title: 'Dominika Krullová', desc: 'Project Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/dominika-krullova.jpg') },
+                { title: 'Viktória Jakubovičová', desc: '>Relationship Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/viktoria-jakubovicova.jpg') },
+            ],
+        }
+    }
+}
+</script>
