@@ -49,28 +49,7 @@
             princípy OpenLab-u na všetkých úrovniach škôl a nastaviť svetový štandard vzdelávania v školstve v technológiách.
             </p>
         </div>
-        <div class="col-lg-7 col-xl-6 d-flex flex-column align-items-center justify-content-center justify-content-lg-end">
-            <div class="boxes row d-flex justify-content-space-between">
-                <div class="tried box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
-                    <p class="box-number lh-1">11</p>
-                    <p part="box-text">tried</p>
-                </div>
-                <div class="studentov box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
-                    <p class="box-number lh-1">222</p>
-                    <p part="box-text">študentov</p>
-                </div>
-            </div>
-            <div class="boxes row d-flex justify-content-space-between">
-                <div class="labmastrov box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
-                    <p class="box-number lh-1">14</p>
-                    <p part="box-text">labmastrov</p>
-                </div>
-                <div class="skoly box col-6 text-center m-2 d-flex flex-column text-end align-items-end justify-content-end fw-bold">
-                    <p class="box-number lh-1 mb-1">2</p>
-                    <p part="box-text">školy</p>
-                </div>
-            </div>
-        </div>
+        <vision-boxes :boxesData="visionBoxes" />
     </site-section>
     <site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-4">
@@ -256,7 +235,7 @@
                 </div>
             </div>
         </div>
-        <join-carousel></join-carousel>
+        <join-carousel />
     </site-section>
     <site-section id="see-projects" class="py-4 py-md-5 z-index-1" containerClass="py-4 py-md-5 border-bottom" rowClass="justify-content-center">
         <div class="text-center col-12 mb-5 z-index-1">
@@ -329,7 +308,7 @@
             <img src="../assets/images/people.png" alt="support-people" class="img-fluid">
         </div>
         <div class="col-md-6">
-            <h2 class="fw-bold md-4">Podporte nás</h2>
+            <h2 class="fw-bold mb-4">Podporte nás</h2>
             <p class="text-gray mb-5">
                 OpenLab postupne rozširujeme ako neziskový vzdelávací projekt s cieľom otvoriť OpenLab-y zamerané na rôzne IT 
                 technológie na čo najväčší počet škôl vo všetkých slovenských regiónoch. Veríme, že OpenLab bude natoľko úspešný,
@@ -341,14 +320,84 @@
             </a>
         </div>
     </site-section>
+    <site-section id="who-is-behind" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+        <div class="col-lg-5 col-xl-4 mb-5 mb-lg-0">
+            <h2 class="fw-light display-6">
+                Kto stojí
+                <br>
+                <span class="fw-bold">
+                    za Openlabom?
+                </span>
+            </h2>
+        </div>
+        <div class="col-lg-7 col-xl-8 d-flex flex-wrap justify-content-around position-relative">
+            <img v-for="imgSrc in whoIsBehindLogos" :key="imgSrc" :src="imgSrc" alt="logo" class="img-fluid my-3 me-md-5">
+        </div>
+    </site-section>
+    <site-section id="ig" class="py-5 row flex-wrap">
+        <ig-feed />
+    </site-section>
+    <site-section id="modern-school" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center" >
+        <div class="col-md-6 col-xl-5 order-2 order-md-1">
+            <h2 class="fw-light mb-3 display-6">
+                Nie je moderná škola
+                <br>
+                <span class="fw-bold">
+                    ako moderná škola
+                </span>
+            </h2>
+            <p class="text-gray mb-3">
+                Podcast Moderná škola vznikol v spolupráci s Romanom ”Yablkom” Hraškom, kde našim zámerom 
+                je rozobrať svet štandardného vzdelávania a spôsob ako môže fungovať moderné vzdelávanie v technológiach.
+            </p>
+            <div class="align-items-center d-flex mb-4">
+                <a href="#" class="me-3">
+                    <img src="@/assets/images/youtube-color.svg" alt="youtube-logo">
+                </a>
+                <a href="#" class="me-3">
+                    <img src="@/assets/images/spotify.svg" alt="spotify-logo">
+                </a>
+                <a href="#" class="me-3">
+                    <img src="@/assets/images/podcast.svg" alt="podcasts-logo">
+                </a>
+                <a href="#" class="me-3">
+                    <img src="@/assets/images/google.svg" alt="google-podcasts-logo">
+                </a>
+            </div>
+            <a href="#" class="btn btn-lg btn-primary border-0">
+                Moderná škola
+            </a>
+        </div>
+        <div class="col-md-6 mb-5 mb-md-0 offset-xl-1 order-1 order-md-2">
+            <img src="@/assets/images/modern.png" alt="modern" class="img-fluid">
+        </div>        
+    </site-section>
+    <site-section id="thanks-for-support" class="py-4 py-md-5" containerClass="py-4" rowClass="justify-content-center">
+        <div class="col-12 text-center">
+            <h2 class="mb-5 display-6">
+            Ďakujeme za 
+            <span class="fw-bold">
+                podporu v roku 2021!
+            </span>
+            </h2>
+        </div>
+        <img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" :images="supporters" />
+    </site-section>
+    <site-section id="newsletter" class="py-4 py-md-5" containerClass="newsletter rounded px-3 px-lg-5 mb-5 py-5 py-md-3 p-lg-5" rowClass="align-items-center">
+        <the-newsletter />
+    </site-section>
 </template>
 
 <script>
 import TheJumbotron from  '../components/TheJumbotron.vue'
 import SiteSection from '../components/layouts/SiteSection.vue'
-import JoinCarousel from '../components/JoinCarousel.vue'
-import SeeProjectsCarousel from '../components/SeeProjectsCarousel.vue'
-import KnowUsCard from '../components/KnowUsCard.vue'
+import JoinCarousel from '../components/carousels/JoinCarousel.vue'
+import SeeProjectsCarousel from '../components/carousels/SeeProjectsCarousel.vue'
+import KnowUsCard from '../components/cards/KnowUsCard.vue'
+import IgFeed from '../components/IgFeed.vue'
+import ImgGrid from '../components/ImgGrid.vue'
+import TheNewsletter from '../components/TheNewsletter.vue'
+import VisionBoxes from '../components/VisionBoxes.vue'
 export default {
     components: {
         TheJumbotron,
@@ -356,9 +405,19 @@ export default {
         JoinCarousel,
         SeeProjectsCarousel,
         KnowUsCard,
+        IgFeed,
+        ImgGrid,
+        TheNewsletter,
+        VisionBoxes
     },
     data() {
         return {
+            visionBoxes: [
+                { title: 'tried', count: '11', colors: 'background: rgba(221, 236, 251, 0.4); color: #5b94d7;' },
+                { title: 'študentov', count: '222', colors: 'background: rgba(156, 238, 204, 0.4); color: #5cc19a;' },
+                { title: 'labmastrov', count: '14', colors: 'background: rgba(238, 226, 156, 0.4); color: #dbca68;' },
+                { title: 'školy', count: '2', colors: 'background: rgba(238, 156, 156, 0.4); color: #b95e73;' }
+            ],
             specialCards: [
                 { title: 'Partnerstvo', text: 'Dáva študentom slobodu, ktorú vyvažujú zodpovednosťou. Spolupráca LabMastra a študentov je v partnerskej rovine.', img: require('../assets/images/special1.svg')},
                 { title: 'LabMaster', text: 'Je mentor s expertízou v danej oblasti, ktorý nastavuje rámce a sprevádza študentov pri dosahovaní míľnikov.', img: require('../assets/images/special2.svg')},
@@ -374,8 +433,28 @@ export default {
                 { title: 'Ján Kožlej', desc: 'Tech Garant pre GamesLab', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/jan-kozlej.jpg') },
                 { title: 'Veronika Radobická', desc: 'Marketing Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/veronika-radobicka.jpg') },
                 { title: 'Dominika Krullová', desc: 'Project Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/dominika-krullova.jpg') },
-                { title: 'Viktória Jakubovičová', desc: '>Relationship Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/viktoria-jakubovicova.jpg') },
+                { title: 'Viktória Jakubovičová', desc: 'Relationship Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/viktoria-jakubovicova.jpg') }
             ],
+            whoIsBehindLogos: [
+                require('../assets/images/wezeo.svg'), 
+                require('../assets/images/power.svg'),
+                require('../assets/images/siemens.svg'),
+                require('../assets/images/spsit.svg'),
+                require('../assets/images/spse.svg'),
+                require('../assets/images/hemisfera.svg')
+            ],
+            supporters: [
+                require('../assets/images/support1.svg'),
+                require('../assets/images/support2.svg'),
+                require('../assets/images/support3.svg'),
+                require('../assets/images/support4.svg'),
+                require('../assets/images/support5.svg'),
+                require('../assets/images/support6.svg'),
+                require('../assets/images/support7.svg'),
+                require('../assets/images/support8.svg'),
+                require('../assets/images/support9.svg'),
+                require('../assets/images/support10.svg')
+            ]
         }
     }
 }

@@ -39,3 +39,29 @@
         </div>
     </nav>
 </template>
+
+<style scoped>
+.navbar { 
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #3597FF !important;
+}
+
+
+.navBtn {
+    background-color: #3597FF;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.navBtn:hover {
+    background-color: #3597FF;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+</style>

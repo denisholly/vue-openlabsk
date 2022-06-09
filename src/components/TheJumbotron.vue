@@ -3,30 +3,68 @@
         <div class="container">
             <div class="main-row row">
                 <div class="main-text col-lg-5 my-md-5 py-5 d-flex align-items-end">
-                <div>
-                    <h1 class="text-white mb-4 fw-light">
-                    Inštitút stredoškolského odborného vzdelávania
-                    <br>
-                    <span class="fw-bold">
-                        zameraný na IT & AI
-                    </span>
-                    </h1>
-                    <p class="text-white">
-                        Realizujeme odborné vzdelávanie zamerané na IT pre štátne školy ako nový štandard formálneho vzdelávania
-                    </p>
-                </div> 
+                    <div>
+                        <h1 class="text-white mb-4 fw-light">
+                            Inštitút stredoškolského odborného vzdelávania
+                        <br>
+                        <span class="fw-bold">
+                            zameraný na IT & AI
+                        </span>
+                        </h1>
+                        <p class="text-white">
+                            Realizujeme odborné vzdelávanie zamerané na IT pre štátne školy ako nový štandard formálneho vzdelávania
+                        </p>
+                    </div> 
                 </div>
                 <div class="main-image-sm d-block d-lg-none">
-                <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid d-block d-lg-none">
+                    <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid d-block d-lg-none">
                 </div>
                 <div class="main-image col-lg-7 d-none d-lg-block">
-                <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid d-none d-lg-block">
+                    <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid d-none d-lg-block">
                 </div>
             </div>
-            </div>
-
-            <!-- <div class="letterO overflow-hidden">
-                <img src="../assets/images/o_letter.png" alt="main-home" class="d-none d-md-block position-absolute">
-            </div> -->
+        </div>
     </section>
 </template>
+
+<style scoped>
+.main-text {
+    z-index: 2;
+}
+
+
+.main-image {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.main-image img {
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    min-width: 496px;
+    max-width: 65%;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-image-sm {
+        position: relative;
+        text-align: center;
+        opacity: 0.2;
+    }
+    
+    .main-image-sm img {
+        position: absolute;
+        bottom: 0;
+        width: 484px;
+        max-width: 100%;
+        left: 0;
+    }
+
+    .main-row {
+        min-height: 430px;
+        display: flex;
+    }
+}
+</style>

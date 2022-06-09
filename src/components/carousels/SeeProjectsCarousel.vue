@@ -34,7 +34,7 @@
 
                         </div>
                         <div class="col-md-6">
-                            <img src="../assets/images/see-projects.jpg" class="see-projects-img" alt="see-projects">
+                            <img src="@/assets/images/see-projects.jpg" class="see-projects-img" alt="see-projects">
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
 
                         </div>
                         <div class="col-md-6">
-                            <img src="../assets/images/see-projects-realtopia.png" class="see-projects-img" alt="see-projects">
+                            <img src="@/assets/images/see-projects-realtopia.png" class="see-projects-img" alt="see-projects">
                         </div>
                     </div>
                 </div>
@@ -78,23 +78,23 @@
 
                     </div>
                     <div class="col-md-6">
-                        <img src="../assets/images/see-projects-renmo.jpg" class="see-projects-img" alt="see-projects">
+                        <img src="@/assets/images/see-projects-renmo.jpg" class="see-projects-img" alt="see-projects">
                     </div>
                 </div>
                 </div>
             </div>
             <div class="see-nav pb-3 d-none d-md-block z-index-1">
                 <a href="#">
-                    <img src="../assets/images/arrow-slide-left.svg" alt="arrow-slide-left.svg">
+                    <img src="@/assets/images/arrow-slide-left.svg" alt="arrow-slide-left.svg">
                 </a>
                 <a href="#">
-                    <img src="../assets/images/arrow-slide-right.svg" alt="arrow-slide-right.svg">
+                    <img src="@/assets/images/arrow-slide-right.svg" alt="arrow-slide-right.svg">
                 </a>
             </div>
         </div>
         <a href="#" class="text-decoration-none see-projects-anchor z-index-1 position-relative">
         Pozrieť si všetky projekty
-            <img src="../assets/images/arrow-right-blue.svg" alt="arrow-right-blue" class="ms-2">
+            <img src="@/assets/images/arrow-right-blue.svg" alt="arrow-right-blue" class="ms-2">
         </a>
     </div>
 </template>

@@ -20,7 +20,7 @@
                     <p class="ms-4 ps-2 mb-0">Roman Popper, AppsLab</p>
                     <p class="ms-4 ps-2 mb-5">Siemens Healthineers</p>
                 </div>
-                <img src="../assets/images/join-labmastri.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-labmastri">
+                <img src="@/assets/images/join-labmastri.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-labmastri">
             </div>
             <div class="carousel-item">
                 <div class="carousel-card join-firm p-1 p-md-0 text-white">
@@ -32,11 +32,11 @@
                     </p>
                     <h3 class="ms-4 ps-2 mt-4 me-3">Technológie sa neustále menia. Preto to “čo” sa študenti učia je druhoradé.</h3>
                     <p class="ms-4 ps-2 me-2 fs-6 mt-4 mb-5 pt-3">V prvom rade riešime “prečo” a “ako” sa študenti vzdelávajú. Inými slovami, OpenLab je o prístupe. Ten keď si študenti osvoja, dokážu ho aplikovať na čokoľvek po zvyšok života.</p>
-                    <img src="../assets/images/signature1.png" alt="signature" class="signature ms-4 ps-2 mb-0">
+                    <img src="@/assets/images/signature1.png" alt="signature" class="signature ms-4 ps-2 mb-0">
                     <p class="ms-4 ps-2 mb-0 pt-5">Grigor Ayrumyan</p>
                     <p class="ms-4 ps-2 mb-5">CEO at WEZEO</p>
                 </div>
-                <img src="../assets/images/join-firm.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-firm">
+                <img src="@/assets/images/join-firm.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-firm">
             </div>
             <div class="carousel-item">
                 <div class="carousel-card join-schools p-1 p-md-0 text-white">
@@ -51,7 +51,7 @@
                     <p class="ms-4 ps-2 mb-0">Milan Válek</p>
                     <p class="ms-4 ps-2 mb-5">Riaditeľ SPŠ IT, Kysucké Nové Mesto</p>
                 </div>
-                <img src="../assets/images/join-schools.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-schools">
+                <img src="@/assets/images/join-schools.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-schools">
             </div>
             <div class="carousel-item">
                 <div class="carousel-card join-students p-1 p-md-0 text-white">
@@ -66,7 +66,7 @@
                     <p class="ms-4 ps-2 mb-0">Viktor Nagy</p>
                     <p class="ms-4 ps-2 mb-5">GamesLab (SPŠE Hálova 16, Bratislava)</p>
                 </div>
-                <img src="../assets/images/join-students.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-students">
+                <img src="@/assets/images/join-students.png" class="d-none d-md-block carousel-img m-auto mt-5" alt="join-students">
             </div>
         </div>
     </div>
