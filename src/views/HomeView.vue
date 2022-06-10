@@ -1,5 +1,8 @@
 <template>
-    <the-jumbotron></the-jumbotron>
+    <site-section id="mainBanner" class="bg-primary position-relative mb-4 mb-md-5" rowClass="main-row">
+        <the-jumbotron />
+    </site-section>
+    
     <site-section id="why" class="py-4 py-md-5" container-class="py-4" row-class="justify-content-center">
         <div class="text-center col-12">
             <h2 class="fw-light mb-5 display-6">
@@ -33,6 +36,7 @@
             <p>Vytvárame šikovné tímy schopné riešiť veľké problémy.</p>
         </div>
     </site-section>
+
     <site-section id="vision" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-5 col-xl-6">
             <h2 class="fw-light mb-5 display-6">
@@ -49,60 +53,28 @@
             princípy OpenLab-u na všetkých úrovniach škôl a nastaviť svetový štandard vzdelávania v školstve v technológiách.
             </p>
         </div>
-        <vision-boxes :boxesData="visionBoxes" />
+        <vision-boxes />
     </site-section>
+
     <site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-4">
             <h2 class="fw-light mb-5 display-6">
-            V akých laboch
-            <br>
-            <span class="fw-bold">
-                možeš študovať?
-            </span>
+                V akých laboch
+                <br>
+                <span class="fw-bold">
+                    možeš študovať?
+                </span>
             </h2>
         </div>
-        <div class="col-lg-8 d-block d-sm-flex">
-            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
-                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
-                    <h5 class="card-title">
-                    <span class="fw-bold">Hybrid</span>
-                    Lab
-                    </h5>
-                    <p class="labs-card-text card-text text-gray">
-                    Študenti sa učia vyvíjať hybridné aplikácie v HTML, PHP, CSS, JavaScript, Ionicu, Vue a OctoberCMS.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
-                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
-                    <h5 class="card-title">
-                    <span class="fw-bold">Games</span>
-                    Lab
-                    </h5>
-                    <p class="labs-card-text card-text text-gray">
-                    Študenti vyvíjajú mobilné hry v Unity a GDevelop, učia sa tvoriť 2D grafiku v programe Piskel, 3D grafiku v programe Blender a herný dizajn.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-            <div class="card col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change">
-                <div class="card-body px-4 pt-4 pb-5 px-xl-5">
-                    <h5 class="card-title">
-                    <span class="fw-bold">Apps</span>
-                    Lab
-                    </h5>
-                    <p class="labs-card-text card-text text-gray">
-                    Študenti sa učia vyvíjať mobilné aplikácie v C# a Xamarin.forms a webové aplikácie v Java a Angular JS.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-        </div>
+        <default-card 
+            class="col-lg-8 d-block d-sm-flex"
+            cardStyle="col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change"
+            cardBodyStyle="px-4 pt-4 pb-5 px-xl-5"
+            textStyle="labs-card-text"
+            data="labsCards"
+        />
     </site-section>
+
     <site-section id="schools" class="py-4 py-md-5 position-relative" containerClass="py-4" rowClass="align-items-center justify-content-center">
         <div class="col-12 mb-3 text-center">
             <h2 class="fw-light mb-5 display-6">
@@ -143,6 +115,7 @@
             </div>
         </div>
     </site-section>
+
     <site-section id="studyIt" class="pt-5 mb-4 mb-md-5" containerClass="pt-lg-5" rowClass="justify-content-center">
         <div class="col-lg-6 col-xl-5 mb-5">
             <h2 class="fw-light pb-4 mb-0 display-6">
@@ -175,6 +148,7 @@
             <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid">
         </div>
     </site-section>
+
     <site-section id="join" class="py-4 py-md-5 position-relative" containerClass="pt-4 pt-md-5" rowClass="align-items-center justify-content-center">
         <div class="col-12 mb-3 text-center">
             <h2 class="fw-light mb-5 display-6">
@@ -185,58 +159,17 @@
             </span>
             </h2>
         </div>
-        <div class="col-12 d-flex flex-nowrap overflow-scroll card-group justify-content-xl-center card-wrapper">
-            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
-                <div class="card-body px-4 pt-4 pb-5 mt-2">
-                    <h5 class="card-title">
-                        <span class="fw-bold">Labmastri</span>
-                    </h5>
-                    <p class="card-text text-gray">
-                        Odborníci z praxe, ktorí odovzdávajú študentom svoj know-how v roli mentora 5 hodín týždenne celý školský rok.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
-                <div class="card-body px-4 pt-4 pb-5 mt-2">
-                    <h5 class="card-title">
-                        <span class="fw-bold">Firmy</span>
-                    </h5>
-                    <p class="card-text text-gray">
-                        Technologické firmy sú garantmi obsahu jednotlivých labov, spolupracujú so študentmi na projektoch a v rámci študentských stáží.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
-                <div class="card-body px-4 pt-4 pb-5 mt-2">
-                    <h5 class="card-title">
-                        <span class="fw-bold">Školy</span>
-                    </h5>
-                    <p class="card-text text-gray">
-                        Stredné odborné školy zamerané na digitálne technológie v jednotlivých regiónoch inovujú svoje technologické vzdelávanie.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-            <div class="card card-join border-0 mx-2 my-3 arrow-icon-change card-shadow">
-                <div class="card-body px-4 pt-4 pb-5 mt-2">
-                    <h5 class="card-title">
-                        <span class="fw-bold">Študenti</span>
-                    </h5>
-                    <p class="card-text text-gray">
-                        Stredoškoláci so záujmom o najnovšie technológie a silnou vnútornou motiváciou učiť sa nové veci a rozvíjať svoje schopnosti.
-                    </p>
-                    <img src="../assets/images/arrow-right.svg" alt="arrow-icon" class="position-absolute arrow-icon">
-                    <img src="../assets/images/arrow-right-blue.svg" alt="arrow-icon" class="position-absolute arrow-icon-blue">
-                </div>
-            </div>
-        </div>
-        <join-carousel />
+        <default-card 
+            class="col-12 d-flex flex-nowrap overflow-scroll card-group justify-content-xl-center card-wrapper"
+            cardStyle="card-join border-0 mx-2 my-3 arrow-icon-change card-shadow"
+            cardBodyStyle="px-4 pt-4 pb-5 mt-2"
+            textStyle="labs-card-text"   
+        />
+        <template v-slot:outOfContainer>
+            <join-carousel :data="joinCarousel" />
+        </template>
     </site-section>
+
     <site-section id="see-projects" class="py-4 py-md-5 z-index-1" containerClass="py-4 py-md-5 border-bottom" rowClass="justify-content-center">
         <div class="text-center col-12 mb-5 z-index-1">
             <h2 class="fw-light mb-5 display-6">
@@ -251,8 +184,9 @@
                 ktorým neskôr posunú svet technológií a celú spoločnosť vpred.
             </p>
         </div>
-        <see-projects-carousel></see-projects-carousel>
+        <see-projects-carousel />
     </site-section>
+
     <site-section id="special" class="pt-4 pt-md-5 position-relative" containerClass="py-4 py-md-5" rowClass="justify-content-center border-bottom pb-5">
             <div class="text-center col-12">
                 <h2 class="mb-5 display-6">
@@ -293,6 +227,7 @@
               <p class="text-gray">Študenti trávia 80% času samoštúdiom a sú vedení k tímovej spolupráci. 20% teórie slúži iba ako odrazový mostík.</p>
             </div>
     </site-section>
+
     <site-section id="know-us" class="pb-4 pb-md-5" containerClass="py-4">
         <div class="text-center col-12">
             <h2 class="mb-5 display-6">
@@ -303,6 +238,7 @@
         </div>
         <know-us-card v-for="card in knowUsCards" :key="card" class="col-6 col-md-3 mb-4 pt-4" :title="card.title" :desc="card.desc" :role="card.role" :imgSrc="card.imgSrc"></know-us-card>
     </site-section>
+
     <site-section id="support-us" class="py-4 py-md-5" rowClass="align-items-center">
         <div class="col-md-6 mb-5 mb-md-0">
             <img src="../assets/images/people.png" alt="support-people" class="img-fluid">
@@ -320,6 +256,7 @@
             </a>
         </div>
     </site-section>
+
     <site-section id="who-is-behind" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-5 col-xl-4 mb-5 mb-lg-0">
             <h2 class="fw-light display-6">
@@ -334,9 +271,11 @@
             <img v-for="imgSrc in whoIsBehindLogos" :key="imgSrc" :src="imgSrc" alt="logo" class="img-fluid my-3 me-md-5">
         </div>
     </site-section>
+
     <site-section id="ig" class="py-5 row flex-wrap">
         <ig-feed />
     </site-section>
+
     <site-section id="modern-school" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center" >
         <div class="col-md-6 col-xl-5 order-2 order-md-1">
             <h2 class="fw-light mb-3 display-6">
@@ -372,6 +311,7 @@
             <img src="@/assets/images/modern.png" alt="modern" class="img-fluid">
         </div>        
     </site-section>
+
     <site-section id="thanks-for-support" class="py-4 py-md-5" containerClass="py-4" rowClass="justify-content-center">
         <div class="col-12 text-center">
             <h2 class="mb-5 display-6">
@@ -381,8 +321,9 @@
             </span>
             </h2>
         </div>
-        <img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" :images="supporters" />
+        <img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" />
     </site-section>
+
     <site-section id="newsletter" class="py-4 py-md-5" containerClass="newsletter rounded px-3 px-lg-5 mb-5 py-5 py-md-3 p-lg-5" rowClass="align-items-center">
         <the-newsletter />
     </site-section>
@@ -394,10 +335,12 @@ import SiteSection from '../components/layouts/SiteSection.vue'
 import JoinCarousel from '../components/carousels/JoinCarousel.vue'
 import SeeProjectsCarousel from '../components/carousels/SeeProjectsCarousel.vue'
 import KnowUsCard from '../components/cards/KnowUsCard.vue'
+import DefaultCard from '../components/cards/DefaultCard.vue'
 import IgFeed from '../components/IgFeed.vue'
 import ImgGrid from '../components/ImgGrid.vue'
 import TheNewsletter from '../components/TheNewsletter.vue'
 import VisionBoxes from '../components/VisionBoxes.vue'
+
 export default {
     components: {
         TheJumbotron,
@@ -405,6 +348,7 @@ export default {
         JoinCarousel,
         SeeProjectsCarousel,
         KnowUsCard,
+        DefaultCard,
         IgFeed,
         ImgGrid,
         TheNewsletter,
@@ -412,20 +356,6 @@ export default {
     },
     data() {
         return {
-            visionBoxes: [
-                { title: 'tried', count: '11', colors: 'background: rgba(221, 236, 251, 0.4); color: #5b94d7;' },
-                { title: 'študentov', count: '222', colors: 'background: rgba(156, 238, 204, 0.4); color: #5cc19a;' },
-                { title: 'labmastrov', count: '14', colors: 'background: rgba(238, 226, 156, 0.4); color: #dbca68;' },
-                { title: 'školy', count: '2', colors: 'background: rgba(238, 156, 156, 0.4); color: #b95e73;' }
-            ],
-            specialCards: [
-                { title: 'Partnerstvo', text: 'Dáva študentom slobodu, ktorú vyvažujú zodpovednosťou. Spolupráca LabMastra a študentov je v partnerskej rovine.', img: require('../assets/images/special1.svg')},
-                { title: 'LabMaster', text: 'Je mentor s expertízou v danej oblasti, ktorý nastavuje rámce a sprevádza študentov pri dosahovaní míľnikov.', img: require('../assets/images/special2.svg')},
-                { title: 'Učebný blok', text: 'Je základný dokument, z ktorého sa študenti učia. Obsahuje všetky vzdelávacie podklady pre konkrétnu fázu.', img: require('../assets/images/special3.svg')},
-                { title: 'Problen driven', text: 'Je princíp učenia, vďaka ktorému sú študenti vedení ku kritickému mysleniu s cieľom vyriešiť konkrétne problémy.', img: require('../assets/images/special4.svg')},
-                { title: 'Project driven', text: 'Po teoretickej fáze sú študenti rozdelení do tímov, v ktorých v spolupráci s firmami tvoria konkrétny projekt pre zákazníka.', img: require('../assets/images/special5.svg')},
-                { title: 'Samoštúdium', text: 'Študenti trávia 80% času samoštúdiom a sú vedení k tímovej spolupráci. 20% teórie slúži iba ako odrazový mostík.', img: require('../assets/images/special6.svg')}
-            ],
             knowUsCards: [
                 { title: 'Grigor Ayrumyan', desc: 'Co-founder & Executive Director', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/grigor-ayrumyan.jpg') },
                 { title: 'Slavomír Terezka', desc: 'Co-founder', role: 'BOARD MEMBER', imgSrc: require('../assets/images/slavomir-terezka.jpg') },
@@ -443,19 +373,44 @@ export default {
                 require('../assets/images/spse.svg'),
                 require('../assets/images/hemisfera.svg')
             ],
-            supporters: [
-                require('../assets/images/support1.svg'),
-                require('../assets/images/support2.svg'),
-                require('../assets/images/support3.svg'),
-                require('../assets/images/support4.svg'),
-                require('../assets/images/support5.svg'),
-                require('../assets/images/support6.svg'),
-                require('../assets/images/support7.svg'),
-                require('../assets/images/support8.svg'),
-                require('../assets/images/support9.svg'),
-                require('../assets/images/support10.svg')
-            ]
         }
     }
 }
 </script>
+
+<style scoped>
+.z-index-1 {
+    z-index: 1;
+}
+
+.bg-primary {
+    background-color: #3597FF !important;
+}
+
+.btn-primary {
+    background-color: #3597FF;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.btn-lg {
+    padding: 18px 50px;
+    font-weight: bold;
+}
+
+.btn-lg:hover {
+    background-color: #3597FF;
+}
+
+#studyIt {
+    background-color: #f3f9ff;
+}
+
+.it-count {
+    z-index: 0;
+    color: rgba(209, 220, 231, 0.3);
+    font-size: 62px;
+    bottom: 0;
+}
+</style>

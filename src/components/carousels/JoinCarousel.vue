@@ -71,3 +71,86 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+.join-carousel-title {
+    position: relative;
+    z-index: 1;
+}
+
+.join-carousel-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    width: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.carousel-img {
+    height: 500px;
+    width: 70%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.join-carousel {
+    left: 150px;
+}
+
+.carousel-card {
+    border-radius: 6px;
+    width: 585px;
+    position: absolute;
+}
+
+.join-labmastri {
+    background: #A54FA2;
+}
+
+.join-firm {
+    background: #3597FF;
+}
+
+.join-schools {
+    background: #33A969;
+}
+
+.join-students {
+    background: #F9A94A;
+}
+
+.signature {
+    width: 179px;
+    position: absolute;
+    bottom: 70px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .join-carousel {
+        left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .join-carousel-indicators {
+        top: -50px;
+    }
+
+    .join-carousel {
+        left: 0 !important;
+    }
+}
+
+.carousel-indicators .active{
+    background-color: #3597ff !important;
+}
+
+.carousel-buttons {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 100%;
+}
+</style>

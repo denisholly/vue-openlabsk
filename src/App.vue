@@ -22,18 +22,7 @@ export default {
 </script>
 
 <style>
-html {
+html, body {
   overflow-x: hidden;
-}
-
-.bg-primary {
-  background-color: #3597FF !important;
-}
-
-.btn-primary {
-  background-color: #3597FF;
-  border-radius: 6px;
-  font-size: 14px;
-  padding: 12px 20px;
 }
 </style>
