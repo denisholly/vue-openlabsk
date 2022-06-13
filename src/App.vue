@@ -1,22 +1,22 @@
 <template>
-  <the-header />
-  <the-navbar />
+  <a-header />
+  <a-navbar />
   
   <router-view />
 
-  <the-footer />
+  <a-footer />
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue'
-import TheNavbar from './components/TheNavbar.vue'
-import TheFooter from './components/TheFooter.vue'
+import AHeader from './components/a-header.vue'
+import ANavbar from './components/a-navbar.vue'
+import AFooter from './components/a-footer.vue'
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    TheNavbar,
-    TheFooter
+    AHeader,
+    ANavbar,
+    AFooter
   }
 }
 </script>

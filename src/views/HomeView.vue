@@ -1,6 +1,6 @@
 <template>
     <site-section id="mainBanner" class="bg-primary position-relative mb-4 mb-md-5" rowClass="main-row">
-        <the-jumbotron />
+        <z-jumbotron />
     </site-section>
     
     <site-section id="why" class="py-4 py-md-5" container-class="py-4" row-class="justify-content-center">
@@ -53,7 +53,7 @@
             princípy OpenLab-u na všetkých úrovniach škôl a nastaviť svetový štandard vzdelávania v školstve v technológiách.
             </p>
         </div>
-        <vision-boxes />
+        <a-vision-boxes />
     </site-section>
 
     <site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
@@ -236,7 +236,7 @@
                 </span>
             </h2>
         </div>
-        <know-us-card v-for="card in knowUsCards" :key="card" class="col-6 col-md-3 mb-4 pt-4" :title="card.title" :desc="card.desc" :role="card.role" :imgSrc="card.imgSrc"></know-us-card>
+        <z-know-us-card />
     </site-section>
 
     <site-section id="support-us" class="py-4 py-md-5" rowClass="align-items-center">
@@ -273,7 +273,7 @@
     </site-section>
 
     <site-section id="ig" class="py-5 row flex-wrap">
-        <ig-feed />
+        <z-ig-feed />
     </site-section>
 
     <site-section id="modern-school" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center" >
@@ -321,50 +321,41 @@
             </span>
             </h2>
         </div>
-        <img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" />
+        <z-img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" />
     </site-section>
 
     <site-section id="newsletter" class="py-4 py-md-5" containerClass="newsletter rounded px-3 px-lg-5 mb-5 py-5 py-md-3 p-lg-5" rowClass="align-items-center">
-        <the-newsletter />
+        <z-newsletter />
     </site-section>
 </template>
 
 <script>
-import TheJumbotron from  '../components/TheJumbotron.vue'
+import ZJumbotron from  '../components/z-jumbotron.vue'
 import SiteSection from '../components/layouts/SiteSection.vue'
 import JoinCarousel from '../components/carousels/JoinCarousel.vue'
 import SeeProjectsCarousel from '../components/carousels/SeeProjectsCarousel.vue'
-import KnowUsCard from '../components/cards/KnowUsCard.vue'
+import ZKnowUsCard from '../components/cards/z-know-us-card.vue'
 import DefaultCard from '../components/cards/DefaultCard.vue'
-import IgFeed from '../components/IgFeed.vue'
-import ImgGrid from '../components/ImgGrid.vue'
-import TheNewsletter from '../components/TheNewsletter.vue'
-import VisionBoxes from '../components/VisionBoxes.vue'
+import ZIgFeed from '../components/z-ig-feed.vue'
+import ZImgGrid from '../components/z-img-grid.vue'
+import ZNewsletter from '../components/z-newsletter.vue'
+import AVisionBoxes from '../components/a-vision-boxes.vue'
 
 export default {
     components: {
-        TheJumbotron,
+        ZJumbotron,
         SiteSection,
         JoinCarousel,
         SeeProjectsCarousel,
-        KnowUsCard,
+        ZKnowUsCard,
         DefaultCard,
-        IgFeed,
-        ImgGrid,
-        TheNewsletter,
-        VisionBoxes
+        ZIgFeed,
+        ZImgGrid,
+        ZNewsletter,
+        AVisionBoxes
     },
     data() {
         return {
-            knowUsCards: [
-                { title: 'Grigor Ayrumyan', desc: 'Co-founder & Executive Director', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/grigor-ayrumyan.jpg') },
-                { title: 'Slavomír Terezka', desc: 'Co-founder', role: 'BOARD MEMBER', imgSrc: require('../assets/images/slavomir-terezka.jpg') },
-                { title: 'Roman Sekerka', desc: 'Co-founder & Tech Garant pre HybridLab a AppsLab', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/roman-sekerka.jpg') },
-                { title: 'Ján Kožlej', desc: 'Tech Garant pre GamesLab', role: 'BOARD MEMBER & EXECUTIVE TEAM', imgSrc: require('../assets/images/jan-kozlej.jpg') },
-                { title: 'Veronika Radobická', desc: 'Marketing Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/veronika-radobicka.jpg') },
-                { title: 'Dominika Krullová', desc: 'Project Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/dominika-krullova.jpg') },
-                { title: 'Viktória Jakubovičová', desc: 'Relationship Manager', role: 'EXECUTIVE TEAM', imgSrc: require('../assets/images/viktoria-jakubovicova.jpg') }
-            ],
             whoIsBehindLogos: [
                 require('../assets/images/wezeo.svg'), 
                 require('../assets/images/power.svg'),
