@@ -1,9 +1,9 @@
 <template>
-    <site-section id="mainBanner" class="bg-primary position-relative mb-4 mb-md-5" rowClass="main-row">
+    <z-site-section id="mainBanner" class="bg-primary position-relative mb-4 mb-md-5" rowClass="main-row">
         <z-jumbotron />
-    </site-section>
+    </z-site-section>
     
-    <site-section id="why" class="py-4 py-md-5" container-class="py-4" row-class="justify-content-center">
+    <z-site-section id="why" class="py-4 py-md-5" container-class="py-4" row-class="justify-content-center">
         <div class="text-center col-12">
             <h2 class="fw-light mb-5 display-6">
                 Prečo
@@ -35,9 +35,9 @@
             <h5 class="fw-bold">Rozvoj talentu</h5>
             <p>Vytvárame šikovné tímy schopné riešiť veľké problémy.</p>
         </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="vision" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+    <z-site-section id="vision" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-5 col-xl-6">
             <h2 class="fw-light mb-5 display-6">
             Naša vízia
@@ -54,9 +54,9 @@
             </p>
         </div>
         <a-vision-boxes />
-    </site-section>
+    </z-site-section>
 
-    <site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+    <z-site-section id="labs" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-4">
             <h2 class="fw-light mb-5 display-6">
                 V akých laboch
@@ -66,16 +66,16 @@
                 </span>
             </h2>
         </div>
-        <default-card 
+        <z-default-card 
             class="col-lg-8 d-block d-sm-flex"
             cardStyle="col-sm-4 border-0 card-shadow mb-2 me-sm-2 arrow-icon-change"
             cardBodyStyle="px-4 pt-4 pb-5 px-xl-5"
             textStyle="labs-card-text"
             data="labsCards"
         />
-    </site-section>
+    </z-site-section>
 
-    <site-section id="schools" class="py-4 py-md-5 position-relative" containerClass="py-4" rowClass="align-items-center justify-content-center">
+    <z-site-section id="schools" class="py-4 py-md-5 position-relative" containerClass="py-4" rowClass="align-items-center justify-content-center">
         <div class="col-12 mb-3 text-center">
             <h2 class="fw-light mb-5 display-6">
             <span class="fw-bold">
@@ -114,9 +114,9 @@
                 </div>
             </div>
         </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="studyIt" class="pt-5 mb-4 mb-md-5" containerClass="pt-lg-5" rowClass="justify-content-center">
+    <z-site-section id="studyIt" class="pt-5 mb-4 mb-md-5" containerClass="pt-lg-5" rowClass="justify-content-center">
         <div class="col-lg-6 col-xl-5 mb-5">
             <h2 class="fw-light pb-4 mb-0 display-6">
                 <span class="fw-bold">
@@ -147,9 +147,9 @@
         <div class="col-lg-6 col-xl-7 d-none d-lg-flex align-items-end">
             <img src="../assets/images/main-home.png" alt="main-home" class="img-fluid">
         </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="join" class="py-4 py-md-5 position-relative" containerClass="pt-4 pt-md-5" rowClass="align-items-center justify-content-center">
+    <z-site-section id="join" class="py-4 py-md-5 position-relative" containerClass="pt-4 pt-md-5" rowClass="align-items-center justify-content-center">
         <div class="col-12 mb-3 text-center">
             <h2 class="fw-light mb-5 display-6">
             Pridajte sa k nám
@@ -159,18 +159,18 @@
             </span>
             </h2>
         </div>
-        <default-card 
+        <z-default-card 
             class="col-12 d-flex flex-nowrap overflow-scroll card-group justify-content-xl-center card-wrapper"
             cardStyle="card-join border-0 mx-2 my-3 arrow-icon-change card-shadow"
             cardBodyStyle="px-4 pt-4 pb-5 mt-2"
             textStyle="labs-card-text"   
         />
         <template v-slot:outOfContainer>
-            <join-carousel :data="joinCarousel" />
+            <a-join-carousel />
         </template>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="see-projects" class="py-4 py-md-5 z-index-1" containerClass="py-4 py-md-5 border-bottom" rowClass="justify-content-center">
+    <z-site-section id="see-projects" class="py-4 py-md-5 z-index-1" containerClass="py-4 py-md-5 border-bottom" rowClass="justify-content-center">
         <div class="text-center col-12 mb-5 z-index-1">
             <h2 class="fw-light mb-5 display-6">
                 Pozrite si
@@ -184,10 +184,10 @@
                 ktorým neskôr posunú svet technológií a celú spoločnosť vpred.
             </p>
         </div>
-        <see-projects-carousel />
-    </site-section>
+        <a-projects-carousel />
+    </z-site-section>
 
-    <site-section id="special" class="pt-4 pt-md-5 position-relative" containerClass="py-4 py-md-5" rowClass="justify-content-center border-bottom pb-5">
+    <z-site-section id="special" class="pt-4 pt-md-5 position-relative" containerClass="py-4 py-md-5" rowClass="justify-content-center border-bottom pb-5">
             <div class="text-center col-12">
                 <h2 class="mb-5 display-6">
                 Čím sme
@@ -226,9 +226,9 @@
               <h5 class="fw-bold mb-4">Samoštúdium</h5>
               <p class="text-gray">Študenti trávia 80% času samoštúdiom a sú vedení k tímovej spolupráci. 20% teórie slúži iba ako odrazový mostík.</p>
             </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="know-us" class="pb-4 pb-md-5" containerClass="py-4">
+    <z-site-section id="know-us" class="pb-4 pb-md-5" containerClass="py-4">
         <div class="text-center col-12">
             <h2 class="mb-5 display-6">
                 <span class="fw-bold">
@@ -237,9 +237,9 @@
             </h2>
         </div>
         <z-know-us-card />
-    </site-section>
+    </z-site-section>
 
-    <site-section id="support-us" class="py-4 py-md-5" rowClass="align-items-center">
+    <z-site-section id="support-us" class="py-4 py-md-5" rowClass="align-items-center">
         <div class="col-md-6 mb-5 mb-md-0">
             <img src="../assets/images/people.png" alt="support-people" class="img-fluid">
         </div>
@@ -255,9 +255,9 @@
                 <img src="../assets/images/arrow-right-blue.svg" alt="arrow-right-blue" class="ms-2">
             </a>
         </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="who-is-behind" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
+    <z-site-section id="who-is-behind" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center">
         <div class="col-lg-5 col-xl-4 mb-5 mb-lg-0">
             <h2 class="fw-light display-6">
                 Kto stojí
@@ -268,15 +268,15 @@
             </h2>
         </div>
         <div class="col-lg-7 col-xl-8 d-flex flex-wrap justify-content-around position-relative">
-            <img v-for="imgSrc in whoIsBehindLogos" :key="imgSrc" :src="imgSrc" alt="logo" class="img-fluid my-3 me-md-5">
+            <z-img-grid-sm />
         </div>
-    </site-section>
+    </z-site-section>
 
-    <site-section id="ig" class="py-5 row flex-wrap">
+    <z-site-section id="ig" class="py-5 row flex-wrap">
         <z-ig-feed />
-    </site-section>
+    </z-site-section>
 
-    <site-section id="modern-school" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center" >
+    <z-site-section id="modern-school" class="py-4 py-md-5" containerClass="py-4" rowClass="align-items-center" >
         <div class="col-md-6 col-xl-5 order-2 order-md-1">
             <h2 class="fw-light mb-3 display-6">
                 Nie je moderná škola
@@ -310,9 +310,9 @@
         <div class="col-md-6 mb-5 mb-md-0 offset-xl-1 order-1 order-md-2">
             <img src="@/assets/images/modern.png" alt="modern" class="img-fluid">
         </div>        
-    </site-section>
+    </z-site-section>
 
-    <site-section id="thanks-for-support" class="py-4 py-md-5" containerClass="py-4" rowClass="justify-content-center">
+    <z-site-section id="thanks-for-support" class="py-4 py-md-5" containerClass="py-4" rowClass="justify-content-center">
         <div class="col-12 text-center">
             <h2 class="mb-5 display-6">
             Ďakujeme za 
@@ -322,49 +322,39 @@
             </h2>
         </div>
         <z-img-grid class="col-12 mt-md-5 support-images" imgDivClass="d-flex justify-content-center align-items-center mx-2 my-3 my-md-0" />
-    </site-section>
+    </z-site-section>
 
-    <site-section id="newsletter" class="py-4 py-md-5" containerClass="newsletter rounded px-3 px-lg-5 mb-5 py-5 py-md-3 p-lg-5" rowClass="align-items-center">
+    <z-site-section id="newsletter" class="py-4 py-md-5" containerClass="newsletter rounded px-3 px-lg-5 mb-5 py-5 py-md-3 p-lg-5" rowClass="align-items-center">
         <z-newsletter />
-    </site-section>
+    </z-site-section>
 </template>
 
 <script>
 import ZJumbotron from  '../components/z-jumbotron.vue'
-import SiteSection from '../components/layouts/SiteSection.vue'
-import JoinCarousel from '../components/carousels/JoinCarousel.vue'
-import SeeProjectsCarousel from '../components/carousels/SeeProjectsCarousel.vue'
+import ZSiteSection from '../components/layouts/z-site-section.vue'
+import AJoinCarousel from '../components/a-join-carousel.vue'
+import AProjectsCarousel from '../components/a-projects-carousel.vue'
 import ZKnowUsCard from '../components/cards/z-know-us-card.vue'
-import DefaultCard from '../components/cards/DefaultCard.vue'
-import ZIgFeed from '../components/z-ig-feed.vue'
-import ZImgGrid from '../components/z-img-grid.vue'
+import ZDefaultCard from '../components/cards/z-default-card.vue'
+import ZIgFeed from '../components/img-grids/z-ig-feed.vue'
+import ZImgGrid from '../components/img-grids/z-img-grid.vue'
+import ZImgGridSm from '../components/img-grids/z-img-grid-sm.vue'
 import ZNewsletter from '../components/z-newsletter.vue'
 import AVisionBoxes from '../components/a-vision-boxes.vue'
 
 export default {
     components: {
         ZJumbotron,
-        SiteSection,
-        JoinCarousel,
-        SeeProjectsCarousel,
+        ZSiteSection,
+        AJoinCarousel,
+        AProjectsCarousel,
         ZKnowUsCard,
-        DefaultCard,
+        ZDefaultCard,
         ZIgFeed,
         ZImgGrid,
+        ZImgGridSm,
         ZNewsletter,
         AVisionBoxes
-    },
-    data() {
-        return {
-            whoIsBehindLogos: [
-                require('../assets/images/wezeo.svg'), 
-                require('../assets/images/power.svg'),
-                require('../assets/images/siemens.svg'),
-                require('../assets/images/spsit.svg'),
-                require('../assets/images/spse.svg'),
-                require('../assets/images/hemisfera.svg')
-            ],
-        }
     }
 }
 </script>
