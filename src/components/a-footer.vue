@@ -55,5 +55,6 @@ footer {
 .footer-yellow {
     left: 100%;
     top: calc(100% - 30px);
+    width: 125px !important;
 }
 </style>
