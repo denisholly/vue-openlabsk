@@ -98,3 +98,77 @@
         </a>
     </div>
 </template>
+
+<style scoped>
+.student-project-title {
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.student-project-title::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: rgba(86, 107, 141, 0.5);
+    z-index: 1;
+}
+
+.carousel-indicators .active{
+    background-color: #3597ff !important;
+}
+
+.see-carousel-buttons {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 100%;
+    background-color: rgba(53, 151, 255, 0.2) !important;
+}
+
+.see-projects-img {
+    height: 350px;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.see-carousels {
+    min-height: 515px;
+}
+
+.see-projects-text {
+    height: 462px;
+}
+
+.see-projects-anchor {
+    color: #3597ff;
+}
+
+@media only screen and (max-width: 767px) {
+   .see-projects-img {
+        height: 215px;
+        width: 100%;
+    }
+
+    .see-carousels {
+        min-height: 627px;
+    }
+
+    .see-projects-text {
+        max-height: 365px;
+    }
+
+    .carousel-card {
+        border-radius: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .carousel-buttons {
+        background-color: rgba(53, 151, 255, 0.2) !important;
+    } 
+}
+</style>

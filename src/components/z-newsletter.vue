@@ -15,3 +15,25 @@
         </span>
     </div>
 </template>
+
+<style>
+.newsletter {
+    background-color: #d7eaff
+}
+
+.newsletter-span input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.newsletter-span input:focus {
+    outline: none;
+}
+
+.send-svg {
+    top: 10%;
+    right: 25px;
+}
+</style>

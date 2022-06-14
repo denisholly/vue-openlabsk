@@ -23,3 +23,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.ig-img:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+</style>

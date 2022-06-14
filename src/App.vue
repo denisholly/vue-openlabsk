@@ -25,4 +25,8 @@ export default {
 html, body {
   overflow-x: hidden;
 }
+
+.text-gray {
+    color: #566b8d !important;
+}
 </style>

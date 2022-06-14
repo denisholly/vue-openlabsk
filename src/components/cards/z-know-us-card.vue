@@ -28,3 +28,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.know-card-subtitle {
+    font-size: 14px;
+}
+</style>

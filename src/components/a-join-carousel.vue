@@ -130,7 +130,15 @@
 
 @media only screen and (max-width: 1199px) {
     .join-carousel {
-        left: 0 !important;
+        left: 70px !important;
+    }
+
+    .carousel-card {
+        width: 262px;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 }
 
@@ -142,6 +150,16 @@
     .join-carousel {
         left: 0 !important;
     }
+
+    .carousel-card {
+        border-radius: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .carousel-buttons {
+        background-color: rgba(53, 151, 255, 0.2) !important;
+    }
 }
 
 .carousel-indicators .active{
@@ -152,5 +170,18 @@
     width: 9px !important;
     height: 9px !important;
     border-radius: 100%;
+}
+
+.card-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-wrapper::-webkit-scrollbar { 
+    display: none;
+}
+
+.card-join {
+    min-width: 190px;
 }
 </style>

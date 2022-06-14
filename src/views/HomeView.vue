@@ -364,26 +364,6 @@ export default {
     z-index: 1;
 }
 
-.bg-primary {
-    background-color: #3597FF !important;
-}
-
-.btn-primary {
-    background-color: #3597FF;
-    border-radius: 6px;
-    font-size: 14px;
-    padding: 12px 20px;
-}
-
-.btn-lg {
-    padding: 18px 50px;
-    font-weight: bold;
-}
-
-.btn-lg:hover {
-    background-color: #3597FF;
-}
-
 #studyIt {
     background-color: #f3f9ff;
 }
@@ -393,5 +373,16 @@ export default {
     color: rgba(209, 220, 231, 0.3);
     font-size: 62px;
     bottom: 0;
+}
+
+.text-gray {
+    color: #566b8d !important;
+}
+
+.btn-primary {
+    background-color: #3597FF;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 12px 20px;
 }
 </style>

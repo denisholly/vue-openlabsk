@@ -1,6 +1,6 @@
 <template>
     <div class="col-12 mt-md-5 support-images">
-        <div v-for="imgSrc in images" :key="imgSrc" :class="imgDivClass">
+        <div v-for="imgSrc in images" :key="imgSrc" :class="imgDivClass" class="div-size">
             <img :src="imgSrc" alt="support-logo">
         </div>
     </div>
@@ -27,3 +27,40 @@ export default {
     }
 }
 </script>
+
+<style>
+.support-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.div-size {
+    width: 171.2px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .div-size {
+        width: 123.2px;
+    }
+
+    .div-size img {
+        max-width: 123.2px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .support-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-size {
+        width: 171.2px;
+    }
+
+    .div-size img {
+        max-width: none;
+    }
+}
+</style>

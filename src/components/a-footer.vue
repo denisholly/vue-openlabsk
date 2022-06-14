@@ -36,3 +36,24 @@
         </div>
     </footer>
 </template>
+
+<style>
+.footer-links {
+    justify-content: start;
+}
+
+@media only screen and (min-width: 767px) {
+    .footer-links {
+        justify-content: flex-end;
+    }
+}
+
+footer {
+    font-size: 13px;
+}
+
+.footer-yellow {
+    left: 100%;
+    top: calc(100% - 30px);
+}
+</style>
