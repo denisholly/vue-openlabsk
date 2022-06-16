@@ -32,6 +32,7 @@ export default {
 .support-images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    place-items: center;
 }
 
 .div-size {
