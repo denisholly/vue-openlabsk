@@ -5,7 +5,7 @@
                 <slot></slot>
             </div>
         </div>
-        <slot name="outOfContainer"></slot>
+        <slot name="outOfContainer" />
     </section>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .main-row {
     min-height: 430px;
     display: flex;

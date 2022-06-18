@@ -29,4 +29,8 @@ html, body {
 .text-gray {
     color: #566b8d !important;
 }
+
+.z-index-1 {
+    z-index: 1;
+}
 </style>

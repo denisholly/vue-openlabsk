@@ -17,6 +17,9 @@
         />
         <template v-slot:outOfContainer>
             <a-join-carousel />
+            <div class="join-letterO overflow-hidden">
+                <img src="@/assets/images/o_letter.png" alt="main-home" class="d-none d-md-block position-absolute">
+            </div>
         </template>
     </z-site-section>
 </template>
@@ -31,3 +34,20 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.join-letterO img {
+    width: 482px;
+    right: -241px;
+    bottom: -241px;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .join-letterO img {
+        width: 241px;
+        right: -120.5px;
+        bottom: -120.5px;
+    }
+}
+</style>

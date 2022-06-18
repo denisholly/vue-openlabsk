@@ -58,19 +58,8 @@ export default {
 </script>
 
 <style scoped>
-.z-index-1 {
-    z-index: 1;
-}
-
 #studyIt {
     background-color: #f3f9ff;
-}
-
-.it-count {
-    z-index: 0;
-    color: rgba(209, 220, 231, 0.3);
-    font-size: 62px;
-    bottom: 0;
 }
 
 .text-gray {

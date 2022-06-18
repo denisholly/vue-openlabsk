@@ -32,3 +32,12 @@
         </div>
     </z-site-section>
 </template>
+
+<style scoped>
+.it-count {
+    z-index: 0;
+    color: rgba(209, 220, 231, 0.3);
+    font-size: 62px;
+    bottom: 0;
+}
+</style>

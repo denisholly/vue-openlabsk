@@ -38,5 +38,31 @@
                 </div>
             </div>
         </div>
+        <template #outOfContainer> 
+            <div class="letterP overflow-hidden z-index-0">
+                <img src="@/assets/images/p_letter.png" alt="p-letter" class="d-none d-md-block position-absolute z-index-0">
+            </div>
+        </template>
     </z-site-section>
 </template>
+
+<style scoped>
+.z-index-0 {
+    z-index: 0 !important;
+}
+
+.letterP img {
+    width: 436px;
+    right: -218px;
+    bottom: -218px;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .letterP img {
+        width: 218px;
+        right: -109px;
+        bottom: -109px;
+    }
+}
+</style>
